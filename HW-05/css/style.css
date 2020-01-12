@@ -244,6 +244,13 @@ img {
   position: relative;
 }
 
+.social-icons-item:hover {
+  background-color: #1abc9c;
+}
+.to-buy:hover{
+  background-color: #1abc9c;
+}
+
 .pe-7s-like,
 .pe-7s-shuffle,
 .pe-7s-clock,
@@ -385,12 +392,12 @@ img {
   font-weight: 400;
   text-align: center;
 }
-.designer-name{
+.designer-name {
   text-decoration: none;
   color: #fefefe;
 }
 
-.designer-name:hover{
+.designer-name:hover {
   cursor: pointer;
-  color:#46bfa9;
+  color: #46bfa9;
 }
