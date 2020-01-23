@@ -87,6 +87,7 @@ main {
   font-family: "Montserrat";
   font-weight: 700;
   text-decoration: none;
+  font-size: 30px;
 }
 
 .site-navigation a:hover,
@@ -114,20 +115,10 @@ main {
 .site-navigation-item:focus {
   color: #f38181;
 }
-.services-title-add,
+
 .services-title {
   margin: 0;
   padding: 0;
-}
-
-.services-title-add,
-.team-title-add {
-  font-size: 24px;
-  color: #333333;
-  font-family: "Kaushan Script";
-  font-weight: 400;
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 .services-title,
@@ -138,6 +129,27 @@ main {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 64px;
+}
+
+.services-title {
+  margin-bottom: 64px;
+}
+
+.services-title {
+  margin-bottom: 46px;
+}
+
+.services-title-add,
+.team-title-add {
+  display: block;
+  font-size: 24px;
+  color: #333333;
+  font-family: "Kaushan Script";
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: initial;
 }
 
 .services-title::after,
@@ -150,21 +162,60 @@ main {
 }
 
 .services-title::after {
-  margin: 40px auto 64px auto;
+  margin: 40px auto 0 auto;
 }
 
 .team-title::after {
-  margin: 40px auto 46px auto;
+  margin: 40px auto 0 auto;
 }
 
 .services-list-item {
-  display: flex;
-  flex: 0 0 380px;
-  justify-content: space-between;
+  width: 380px;
 }
 
-.services-list-item-icon {
-  margin: 0 30px 0 20px;
+.services-item-descr {
+  position: relative;
+  padding-left: 80px;
+}
+
+.services-list-item::before {
+  content: "";
+  display: block;
+  height: 34px;
+  width: 34px;
+  background-repeat: no-repeat;
+  position: absolute;
+  transform:translateX(20px);
+}
+
+.services-list-item:nth-child(1)::before {
+  background-image: url("../img/ALARM1_34_34.png");
+  
+}
+
+.services-list-item:nth-child(2)::before {
+  background-image: url("../img/LINE_GRAPH2_35_35.png");
+  
+}
+
+.services-list-item:nth-child(3)::before {
+  background-image: url("../img/COMPUTER_OK3_34_31.png");
+  
+}
+
+.services-list-item:nth-child(4)::before {
+  background-image: url("../img/BOOK_4_35_35.png");
+  
+}
+
+.services-list-item:nth-child(5)::before {
+  background-image: url("../img/HOME5_35_33.png");
+  
+}
+
+.services-list-item:nth-child(6)::before {
+  background-image: url("../img/IMAGE6_36_35.png");
+  
 }
 
 .services-list,
@@ -206,6 +257,8 @@ main {
 .services {
   margin-bottom: 100px;
 }
+
+/* Team section */
 
 .team-list-item-image {
   display: block;
