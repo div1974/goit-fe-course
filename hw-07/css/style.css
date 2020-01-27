@@ -113,20 +113,14 @@ img {
   max-width: 100%;
 }
 
-.wrapper {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 .container {
   width: 940px;
   margin: 0 auto;
 }
 
-main {
+/* main {
   flex-grow: 1;
-}
+} */
 
 .page-nav {
   display: flex;
@@ -170,17 +164,6 @@ main {
   color: #fed136;
 }
 
-/* 
-.site-navigation-item:hover,
-.site-navigation-item:focus {
-  color: #f38181;
-} */
-
-/* .services-title {
-  margin: 0;
-  padding: 0;
-} */
-
 .services-title,
 .contacts-title {
   margin: 0;
@@ -193,25 +176,7 @@ main {
   letter-spacing: -1px;
   text-align: center;
   text-transform: uppercase;
-
-  /* margin-bottom: 64px; */
 }
-
-/* .services-title {
-  margin-bottom: 46px;
-} */
-
-/* .services-title-add,
-.team-title-add {
-  display: block;
-  font-size: 24px;
-  color: #333333;
-  font-family: "Kaushan Script";
-  font-weight: 400;
-  text-align: center;
-  margin-bottom: 4px;
-  text-transform: initial;
-} */
 
 .services-descr,
 .contacts-descr {
@@ -230,7 +195,6 @@ main {
 
 .services-item-descr {
   position: relative;
-  /* padding-left: 80px; */
 }
 
 .services-list-item::before {
@@ -299,12 +263,13 @@ main {
   margin-bottom: 120px;
 }
 
-
 .contacts {
   background-image: url("../img/Map_Image_1404_679.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  /* background-size: auto; */
+  padding-top: 92px;
+  padding-bottom: 115px;
 }
 
 .contacts-title {
@@ -315,13 +280,12 @@ main {
   margin-bottom: 76px;
 }
 
-
-
 .contact-to-us {
   display: block;
   width: 940px;
   height: 306px;
 }
+
 .contacts-fields {
   margin: 0;
   padding: 0;
@@ -333,9 +297,6 @@ main {
   height: 208px;
   margin-bottom: 28px;
 }
-
-
-
 
 input[type="email"],
 input[type="text"] {
@@ -352,7 +313,6 @@ input[type="text"] {
   font-weight: 700;
 }
 
-
 textarea {
   width: 455px;
   height: 208px;
@@ -364,31 +324,27 @@ textarea {
   font-weight: 700;
 }
 
-.contact-to-us
-
-/* input[type="text" name="user_name"], */
-input[type="email"]:valid {
-
+.contact-to-us input[name="user_name"]:valid,
+input[type="email"]:valid,
+textarea:valid {
   outline: green solid 2px;
 }
 
-.contact-to-us
-
-/* input[type="text" name="user_name"], */
-input[type="email"]:invalid {
-
+.contact-to-us input[name="user_name"]:invalid,
+input[type="email"]:invalid,
+textarea:invalid {
   outline: red solid 2px;
 }
 
-.name:valid{
+/* .name:valid{
   outline: green solid 2px;
 }
 
 .name:invalid{
   outline: red solid 2px;
-}
+} */
 
-.contact-to-us
+/* .contact-to-us
 textarea:valid{
   outline: green solid 2px;
 }
@@ -396,7 +352,7 @@ textarea:valid{
 .contact-to-us
 textarea:invalid{
   outline: red solid 2px;
-}
+} */
 
 .submit-button {
   display: block;
@@ -421,4 +377,3 @@ textarea:invalid{
 /* .contact-to-us input:focus {
   background-color: #bbbbbb;
 } */
-
