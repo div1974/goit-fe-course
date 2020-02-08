@@ -1,0 +1,126 @@
+@media (max-width: 767px) {
+  .partners-list-item:not(:last-child) {
+    margin-bottom: 44px;
+  }
+
+  .partners-list-item {
+    margin: 0 auto 28px auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    padding-top: 34px;
+  }
+
+  .logo {
+    margin: 0;
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  .login {
+    margin: 0;
+  }
+
+  .promo-title {
+    font-size: 52px;
+    margin-bottom: 36px;
+  }
+
+  .promo-title-add {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .container {
+    width: 768px;
+  }
+
+  .background_wrapper {
+    background-image: url("../img/People_768_402_tablet.jpg");
+    min-height: 702px;
+  }
+
+  .header {
+    margin: 0 34px 140px 34px;
+  }
+
+  .partners-list {
+    height: 495px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .partners-list-item {
+    margin: 0;
+  }
+
+  
+  .partners-list-item:nth-child(1),
+  .partners-list-item:nth-child(2) {
+    margin-right: 20px;
+  }
+
+  .partners-list-item:nth-child(2n + 1) {
+    margin-bottom: 56px;
+  }
+
+  .partners-list-item a {
+    left: 50%;
+    top: 0;
+    transform: translate(50%, 200%);
+  }
+
+  .other-partner-find {
+    margin: 0 auto 42px auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .partners-title {
+    margin-bottom: 36px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 940px;
+    padding: 0;
+  }
+
+  .background_wrapper {
+    background-image: url("../img/People_1442_702_desktop.jpg");
+    min-height: 702px;
+  }
+  .header {
+    margin: 0 0 140px 0;
+  }
+
+  .partners-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: 38px;
+  }
+
+  .partners-list-item {
+    width: 220px;
+  }
+
+  .partners-list-item a {
+    left: 50%;
+    top: 0;
+    transform: translate(50%, 200%);
+
+    .other-partner-find {
+      margin: 0 auto 74px auto;
+    }
+  }
+}

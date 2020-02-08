@@ -1,0 +1,306 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .visually-hidden:not(:focus):not(:active),
+  input[type="checkbox"].visually-hidden,
+  input[type="radio"].visually-hidden {
+    position: absolute;
+  
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+  
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  .container {
+    width: 940px;
+    margin: 0 auto;
+  }
+  
+  /* main {
+    flex-grow: 1;
+  } */
+  
+  .page-nav {
+    display: flex;
+    align-items: flex-end;
+    min-height: 66px;
+    justify-content: space-between;
+  }
+  
+  .page-header {
+    margin-bottom: 126px;
+  }
+  
+  .site-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    width: 490px;
+    list-style: none;
+    text-transform: uppercase;
+  }
+  
+  .site-navigation a {
+    display: block;
+    color: #222222;
+    text-decoration: none;
+    transition: color 200ms linear;
+  }
+  
+  .logo {
+    margin: 0;
+    color: #fed136;
+    font-family: "Oleo Script Swash Caps";
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 26px;
+  }
+  
+  .site-navigation a:hover,
+  .site-navigation a:focus {
+    color: #fed136;
+  }
+  
+  .services-title,
+  .contacts-title {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    color: #222222;
+    font-family: "Montserrat";
+    font-weight: 700;
+    line-height: 75px;
+    letter-spacing: -1px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  .services-descr,
+  .contacts-descr {
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather";
+    font-style: italic;
+    font-weight: 400;
+    margin: 0 auto 82px auto;
+    text-align: center;
+  }
+  
+  .services-list-item {
+    width: 290px;
+  }
+  
+  .services-item-descr {
+    position: relative;
+  }
+  
+  .services-list-item::before {
+    content: "";
+    display: block;
+    height: 76px;
+    width: 75px;
+    background-repeat: no-repeat;
+    margin: 0 auto 26px auto;
+    /* position: absolute;
+    transform:translateX(20px); */
+  }
+  
+  .services-list-item:nth-child(1)::before {
+    background-image: url("../img/Icon_Basket_76_75.png");
+  }
+  
+  .services-list-item:nth-child(2)::before {
+    background-image: url("../img/Icon_Laptop_76_75.png");
+  }
+  
+  .services-list-item:nth-child(3)::before {
+    background-image: url("../img/Icon_Locked_76_75.png");
+  }
+  
+  .services-list,
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .services-list-item:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 100px;
+  }
+  
+  .services-item-title,
+  .services-item-Shortdescr {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .services-item-title {
+    font-size: 18px;
+    letter-spacing: 0px;
+    color: #222222;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  
+  .services-item-Shortdescr {
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #777777;
+    font-family: "Roboto Slab";
+    font-weight: 400;
+  }
+  
+  .services-list {
+    margin-bottom: 120px;
+  }
+  
+  .contacts {
+    background-image: url("../img/Map_Image_1404_679.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: auto; */
+    padding-top: 92px;
+    padding-bottom: 115px;
+  }
+  
+  .contacts-title {
+    color: #ffffff;
+  }
+  .contacts-descr {
+    color: #777777;
+    margin-bottom: 76px;
+  }
+  
+  .contact-to-us {
+    display: block;
+    width: 940px;
+    height: 306px;
+  }
+  
+  .contacts-fields {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 208px;
+    margin-bottom: 28px;
+  }
+  
+  input[type="email"],
+  input[type="text"] {
+    /* border: 0; */
+    width: 455px;
+    height: 50px;
+    border-radius: 2px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    color: #bbbbbb;
+    font-family: "Montserrat";
+    font-weight: 700;
+  }
+  
+  textarea {
+    width: 455px;
+    height: 208px;
+    resize: none;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    color: #bbbbbb;
+    font-family: "Montserrat";
+    font-weight: 700;
+  }
+  
+  .contact-to-us input[name="user_name"]:valid,
+  input[type="email"]:valid,
+  textarea:valid {
+    outline: green solid 2px;
+  }
+  
+  .contact-to-us input[name="user_name"]:invalid,
+  input[type="email"]:invalid,
+  textarea:invalid {
+    outline: red solid 2px;
+  }
+  
+  /* .name:valid{
+    outline: green solid 2px;
+  }
+  
+  .name:invalid{
+    outline: red solid 2px;
+  } */
+  
+  /* .contact-to-us
+  textarea:valid{
+    outline: green solid 2px;
+  }
+  
+  .contact-to-us
+  textarea:invalid{
+    outline: red solid 2px;
+  } */
+  
+  .submit-button {
+    display: block;
+    border: 0;
+    width: 240px;
+    height: 66px;
+    border-radius: 3px;
+    background-color: #fed136;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+  }
+  
+  .contacts-fields-item:not(:nth-last-child(-n + 1)) {
+    margin-right: 30px;
+  }
+  
+  /* .contact-to-us input:focus {
+    background-color: #bbbbbb;
+  } */
+  
