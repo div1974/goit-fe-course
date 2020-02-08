@@ -55,17 +55,15 @@ img {
   padding: 0 10px;
 }
 
-.background_wrapper { 
-    margin-bottom: 72px;
-
-}  
+.background_wrapper {
+  margin-bottom: 72px;
+}
 
 .login {
   margin: 34px 0 118px 68px;
   padding: 0;
   list-style: none;
   display: flex;
- 
 }
 
 .login-link,
@@ -80,13 +78,11 @@ img {
 }
 
 .background_wrapper {
-  
   background-image: url("../img/people_320_540_mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   min-height: 540px;
-  
 }
 
 .header {
@@ -112,7 +108,6 @@ img {
 .promo-title {
   font-size: 30px;
   text-transform: uppercase;
-  /* display: block; */
   margin: 0;
   text-align: center;
   margin-bottom: 18px;
@@ -124,7 +119,6 @@ img {
   font-family: "Roboto";
   font-weight: 300;
   text-transform: none;
-  /* letter-spacing: 1.5px; */
 }
 
 .partner-find {
@@ -178,11 +172,8 @@ img {
 }
 
 .partners-list-item {
-  /* margin: 0 auto 28px auto ; */
   width: 236px;
   position: relative;
- 
-  
 }
 
 .other-partner-find {
@@ -190,7 +181,6 @@ img {
   border: 0;
   padding: 10px 70px;
   color: #ff4e50;
-  /* align-items: center; */
   border-radius: 20px;
   border-radius: 20px;
   background-color: #ffffff;
@@ -198,7 +188,7 @@ img {
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 700;
-  margin: 0 auto 56px auto;
+  margin: 0 auto;
 }
 
 .partners-list-item a {
@@ -212,25 +202,20 @@ img {
   top: 50%;
   transform: translate(50%, -50%);
   z-index: 10;
-  
 }
 
-/* .partners-list-item:nth-child(1)::after { */
 .tv-icon {
   background-image: url("../img/icon_tv_43_43_mobile.png");
 }
 
-/* .partners-list-item:nth-child(2)::after { */
 .bottle-icon {
   background-image: url("../img/icon_bottle_43_42_mobile.png");
 }
 
-/* .partners-list-item:nth-child(3)::after { */
 .coffee-icon {
   background-image: url("../img/icon_coffe_43_43_mobile.png");
 }
 
-/* .partners-list-item:nth-child(4)::after { */
 .twitter-icon {
   background-image: url("../img/icon_twitter_43_43_mobile.png");
 }
@@ -238,6 +223,6 @@ img {
 .other-partner-find:hover,
 .partner-find:hover,
 .other-partner-find:focus,
-.partner-find:focus{
+.partner-find:focus {
   cursor: pointer;
 }
