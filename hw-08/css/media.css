@@ -32,11 +32,14 @@
   .promo-title-add {
     font-size: 24px;
   }
+
+  .partners-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 960px) {
-  
-
   .container {
     width: 748px;
   }
@@ -52,10 +55,7 @@
 
   .partners-list {
     height: 495px;
-
-    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-content: center;
   }
 
@@ -104,10 +104,7 @@
   }
 
   .partners-list {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-
     margin-bottom: 38px;
   }
 
