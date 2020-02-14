@@ -1,0 +1,237 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* .container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 10px;
+} */
+
+.promo_wrapper {
+  margin-bottom: 72px;
+}
+
+.login {
+  /* margin: 34px 0 118px 68px; */
+  margin-bottom: 118px;
+  padding: 0;
+  padding-right: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.login-link,
+.signup-link {
+  border-radius: 18px;
+  border: 2px solid rgba(255, 255, 255, 0);
+  padding: 10px 15px;
+}
+
+.login-link {
+  margin-right: 4px;
+}
+
+.promo_wrapper {
+  background-image: url("../img/people_320_540_mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 540px;
+}
+
+.header {
+  /* display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse; */
+  margin: 0 auto 30px auto;
+
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  /* justify-content: center; */
+}
+
+.login-link:hover,
+.login-link:focus,
+.signup-link:hover,
+.signup-link:focus {
+  border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.promo-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 18px;
+  line-height: 1.2;
+}
+
+.promo-title-add {
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: 300;
+  text-transform: none;
+}
+
+.partner-find {
+  display: block;
+  border: 0;
+  padding: 15px 46px;
+  /* align-items: center; */
+  border-radius: 20px;
+  background-color: #ff4e50;
+  font-family: "Montserrat";
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.partners {
+  padding-bottom: 56px;
+}
+
+.partners-title {
+  margin: 0;
+  font-size: 22px;
+  color: #333333;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.partners-item-title {
+  margin: 0;
+  font-size: 14px;
+  color: #333333;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  margin-top: 22px;
+  margin-bottom: 18px;
+}
+
+.partners-item-Shortdescr {
+  margin: 0;
+  font-size: 14px;
+  color: #666666;
+  font-family: "Roboto";
+  font-weight: 300;
+  text-align: center;
+}
+
+.partners-list {
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 44px;
+}
+
+.partners-list-item {
+  width: 236px;
+  position: relative;
+}
+
+.other-partner-find {
+  display: block;
+  border: 0;
+  padding: 10px 70px;
+  color: #ff4e50;
+  border-radius: 20px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: 2px solid #ff4e50;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.partners-list-item a {
+  display: block;
+  height: 43px;
+  width: 43px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  z-index: 10;
+}
+
+.tv-icon {
+  background-image: url("../img/icon_tv_43_43_mobile.png");
+}
+
+.bottle-icon {
+  background-image: url("../img/icon_bottle_43_42_mobile.png");
+}
+
+.coffee-icon {
+  background-image: url("../img/icon_coffe_43_43_mobile.png");
+}
+
+.twitter-icon {
+  background-image: url("../img/icon_twitter_43_43_mobile.png");
+}
+
+.other-partner-find:hover,
+.partner-find:hover,
+.other-partner-find:focus,
+.partner-find:focus {
+  cursor: pointer;
+}
