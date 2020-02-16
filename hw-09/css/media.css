@@ -71,9 +71,9 @@
     
   }
 
-  .partners-list-item {
+  /* .partners-list-item {
     margin: 0 auto; 
-  }
+  } */
   
   .partners-list [class*="col-"]:nth-child(2n+1) {
   margin-bottom: 56px;
