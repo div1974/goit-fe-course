@@ -103,9 +103,15 @@ main {
 }
 
 .site-navigation svg {
-  /* display: block; */
+  display: block;
   /* color: #95e1d3; */
   fill: #fff;
+}
+
+.site-navigation svg path {
+  
+  fill:inherit;
+
 }
 
 .logo {
@@ -444,10 +450,11 @@ display: block;
 width: 56px;
 height: 56px;
 fill: #000000;
+path: inherit;
 
 }
 
-.team-socials-list svg path{
+.team-socials-list svg path {
   fill: inherit;
 
 }
