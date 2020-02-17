@@ -447,6 +447,11 @@ fill: #000000;
 
 }
 
+.team-socials-list svg path{
+  fill: inherit;
+
+}
+
 
 /* .icon-Facebook {
   background-image: url("../img/facebook_15_29.png");
