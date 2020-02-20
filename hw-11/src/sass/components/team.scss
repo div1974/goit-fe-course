@@ -1,0 +1,133 @@
+.team__item-image {
+  display: block;
+  width: 380px;
+  height: 470px;
+  -o-object-fit: none;
+  object-fit: none;
+  position: relative;
+}
+
+.team__item:nth-child(1) .team__item-image {
+  -o-object-position: 20% 50%;
+  object-position: 20% 50%;
+}
+
+.team__item:nth-child(2) .team__item-image {
+  -o-object-position: 50% 95%;
+  object-position: 50% 95%;
+}
+
+.team__item:nth-child(3) .team__item-image {
+  -o-object-position: 50% 5%;
+  object-position: 50% 5%;
+}
+
+.team__card {
+  margin-bottom: 26px;
+}
+
+.team__descr {
+  margin: 0;
+  font-size: 15px;
+  line-height: 24px;
+  color: $services-Shortdescr-color;
+  font-family: $services-Shortdescr-font;
+  font-weight: $base-font-weight;
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.team__item-name {
+  margin: 0;
+  color: $title-add-color;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.team__item-occupation {
+  margin: 0;
+  font-size: 15px;
+  line-height: 24px;
+  color: $services-Shortdescr-color;
+  font-family: $services-Shortdescr-font;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+}
+
+.team__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 380px;
+  height: 470px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+
+  &:hover {
+    -webkit-transform: translate(-10px, -10px);
+    -ms-transform: translate(-10px, -10px);
+    transform: translate(-10px, -10px);
+    -webkit-transition: -webkit-transform 200ms linear;
+    transition: -webkit-transform 200ms linear;
+    -o-transition: transform 200ms linear;
+    transition: transform 200ms linear;
+    transition: transform 200ms linear, -webkit-transform 200ms linear;
+  }
+
+  &::after {
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 200ms linear;
+    -o-transition: opacity 200ms linear;
+    transition: opacity 200ms linear;
+  }
+
+  &:hover::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 380px;
+    height: 470px;
+    background: transparent;
+    background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      from(rgba(240, 226, 144, 50%)),
+      to(rgba(233, 138, 137, 50%))
+    );
+    
+    background-image: -o-linear-gradient(
+      bottom,
+      rgba(240, 226, 144, 50%) 0%,
+      rgba(233, 138, 137, 50%) 100%
+    );
+    background-image: linear-gradient(
+      0deg,
+      rgba(240, 226, 144, 50%) 0%,
+      rgba(233, 138, 137, 50%) 100%
+    );
+    z-index: 50;
+    opacity: 1;
+  }
+
+  &:hover .socials {
+    opacity: 1;
+    -webkit-transition: opacity 200ms linear;
+    -o-transition: opacity 200ms linear;
+    transition: opacity 200ms linear;
+  }
+
+}
+
+.team--mb {
+  margin-bottom: 84px;
+}

@@ -1,0 +1,15 @@
+input[type='submit'] {
+  width: 150px;
+  height: 40px;
+
+  &:hover {
+    background-color: $input-btn-color;
+    color: $main-color;
+    cursor: pointer;
+    -webkit-transition: background-color 200ms linear;
+    -o-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+  }
+  
+}
+

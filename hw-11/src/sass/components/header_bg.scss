@@ -1,0 +1,14 @@
+.header_bg {
+  background-image: url('../images/eagle_1920_1000_opt-min.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 1000px;
+  margin-bottom: 54px;
+
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/eagle_3840_2000@2x_opt-min.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 2000px;
+  }
+}

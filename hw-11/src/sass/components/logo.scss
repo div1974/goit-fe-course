@@ -1,0 +1,6 @@
+.logo {
+  @extend %link;
+  color: $main-color;
+  font-weight: 700;
+  font-size: 30px;
+}

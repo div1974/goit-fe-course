@@ -1,0 +1,12 @@
+@media(min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+    .header_bg {
+        background-image: url("../img/eagle_3840_2000@2x_opt-min.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        /* background-size: cover; */
+        min-height: 2000px;
+      }
+
+      
+}

@@ -1,0 +1,10 @@
+.copyright {
+  color: $title-add-color;
+  text-align: left;
+}
+
+.copyright__link {
+  @extend %link;
+  color: $title-after-color;
+  
+}
